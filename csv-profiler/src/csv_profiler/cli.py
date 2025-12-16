@@ -10,6 +10,11 @@ from csv_profiler.render import render_markdown
 
 app = typer.Typer()
 
+@app.command(help="version of the CSV Profiler tool")
+def version():
+    """Print the version of the CSV Profiler tool."""
+    typer.echo("CSV Profiler version 1.0.0")
+
 @app.command(help="Profile a CSV file and write JSON + Markdown reports")
 def profile(
     input_path: Path = typer.Argument(..., help="Path to input CSV file"),
