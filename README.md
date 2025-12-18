@@ -19,14 +19,38 @@ The source code is organized under the `src/` directory:
 - `render.py`: Formats and generates the report.
 - `app.py`: Streamlit web interface.
 
+├── data/                   # Sample datasets
+├── outputs/                # Generated reports (created automatically)
+├── src/
+│   └── csv_profiler/       # Main Package
+│       ├── __init__.py
+│       ├── app.py          # Streamlit Dashboard Entrypoint
+│       ├── cli.py          # CLI Entrypoint (Typer)
+│       ├── io.py           # File handling logic
+│       ├── profiling.py    # Core statistical logic
+│       └── render.py       # Markdown generation logic
+├── .gitignore
+├── requirements.txt
+└── README.md
+
 ## Installation
-Ensure you have **uv** installed, then follow these steps:
+Ensure you have Python 3.11+ and **uv** installed. This project uses uv for dependency management, then follow these steps:
 
 ```bash
 git clone https://github.com/Fayezx0/AI_pro.git
+uv pip install -r csv-profiler\requirements.txt
 cd AI_pro/csv-profiler
 python -m venv .venv
 .venv\Scripts\activate
 pip install pandas streamlit typer
 
 uv run streamlit run src/csv_profiler/app.py
+
+
+
+
+Built With
+-Python 3.11
+-Typer (CLI)
+-Streamlit (GUI)
+-httpx (URL handling)
