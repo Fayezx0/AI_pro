@@ -2,6 +2,9 @@
 A Python tool to analyze CSV datasets and generate reports.
 Built as part of the **AI Professionals Bootcamp**.
 
+## Demo
+![CSV Profiler Dashboard](images/image.png.png)
+
 ## Features
 - CSV ingestion using pandas
 - Descriptive statistics and profiling
