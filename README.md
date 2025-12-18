@@ -38,11 +38,10 @@ Ensure you have Python 3.11+ and **uv** installed. This project uses uv for depe
 
 ```bash
 git clone https://github.com/Fayezx0/AI_pro.git
-uv pip install -r csv-profiler\requirements.txt
 cd AI_pro/csv-profiler
 python -m venv .venv
 .venv\Scripts\activate
-pip install pandas streamlit typer
+uv pip install -r requirements.txt
 
 uv run streamlit run src/csv_profiler/app.py
 
