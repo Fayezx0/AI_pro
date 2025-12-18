@@ -14,6 +14,7 @@ The source code is organized under the `src/` directory:
 - `io.py`: Manages file input/output operations.
 - `profiling.py`: Core analysis logic.
 - `render.py`: Formats and generates the report.
+- `app.py`: Streamlit web interface.
 
 ## Installation
 Ensure you have **uv** installed, then follow these steps:

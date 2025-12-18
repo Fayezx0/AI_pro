@@ -1,76 +1,335 @@
 {
-  "summary": {
-    "rows": 4,
-    "columns": 4,
-    "column_names": [
-      "name",
-      "age",
-      "city",
-      "salary"
-    ]
-  },
-  "columns": {
-    "name": {
-      "type": "text",
-      "count": 4,
+  "n_rows": 100,
+  "n_cols": 12,
+  "columns": [
+    {
+      "name": "Index",
+      "type": "number",
       "missing": 0,
-      "unique": 4,
-      "top": [
-        {
-          "value": "Aisha",
-          "count": 1
-        },
-        {
-          "value": "Fahad",
-          "count": 1
-        },
-        {
-          "value": "Noor",
-          "count": 1
-        },
-        {
-          "value": "Salem",
-          "count": 1
-        }
-      ]
+      "missing_pct": 0.0,
+      "unique": 100,
+      "min": 1.0,
+      "max": 100.0,
+      "mean": 50.5
     },
-    "age": {
-      "type": "number",
-      "min": 23.0,
-      "max": 31.0,
-      "mean": 27.666666666666668,
-      "count": 3,
-      "missing": 1,
-      "unique": 3
-    },
-    "city": {
+    {
+      "name": "Customer Id",
       "type": "text",
-      "count": 3,
-      "missing": 1,
-      "unique": 3,
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 100,
       "top": [
         {
-          "value": "Riyadh",
+          "value": "DD37Cf93aecA6Dc",
           "count": 1
         },
         {
-          "value": "Jeddah",
+          "value": "1Ef7b82A4CAAD10",
           "count": 1
         },
         {
-          "value": "Dammam",
+          "value": "6F94879bDAfE5a6",
+          "count": 1
+        },
+        {
+          "value": "5Cef8BFA16c5e3c",
+          "count": 1
+        },
+        {
+          "value": "053d585Ab6b3159",
           "count": 1
         }
       ]
     },
-    "salary": {
-      "type": "number",
-      "min": 9000.0,
-      "max": 15000.0,
-      "mean": 12000.0,
-      "count": 3,
-      "missing": 1,
-      "unique": 3
+    {
+      "name": "First Name",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 93,
+      "top": [
+        {
+          "value": "Sheryl",
+          "count": 2
+        },
+        {
+          "value": "Joanna",
+          "count": 2
+        },
+        {
+          "value": "Faith",
+          "count": 2
+        },
+        {
+          "value": "Shane",
+          "count": 2
+        },
+        {
+          "value": "Tom",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Last Name",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 97,
+      "top": [
+        {
+          "value": "Mata",
+          "count": 2
+        },
+        {
+          "value": "Foley",
+          "count": 2
+        },
+        {
+          "value": "Greer",
+          "count": 2
+        },
+        {
+          "value": "Baxter",
+          "count": 1
+        },
+        {
+          "value": "Lozano",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Company",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 99,
+      "top": [
+        {
+          "value": "Simon LLC",
+          "count": 2
+        },
+        {
+          "value": "Rasmussen Group",
+          "count": 1
+        },
+        {
+          "value": "Vega-Gentry",
+          "count": 1
+        },
+        {
+          "value": "Murillo-Perry",
+          "count": 1
+        },
+        {
+          "value": "Dominguez, Mcmillan and Donovan",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "City",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 100,
+      "top": [
+        {
+          "value": "East Leonard",
+          "count": 1
+        },
+        {
+          "value": "East Jimmychester",
+          "count": 1
+        },
+        {
+          "value": "Isabelborough",
+          "count": 1
+        },
+        {
+          "value": "Bensonview",
+          "count": 1
+        },
+        {
+          "value": "West Priscilla",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Country",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 85,
+      "top": [
+        {
+          "value": "Solomon Islands",
+          "count": 4
+        },
+        {
+          "value": "Dominican Republic",
+          "count": 2
+        },
+        {
+          "value": "Bulgaria",
+          "count": 2
+        },
+        {
+          "value": "Togo",
+          "count": 2
+        },
+        {
+          "value": "Sri Lanka",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Phone 1",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 100,
+      "top": [
+        {
+          "value": "229.077.5154",
+          "count": 1
+        },
+        {
+          "value": "5153435776",
+          "count": 1
+        },
+        {
+          "value": "+1-539-402-0259",
+          "count": 1
+        },
+        {
+          "value": "001-808-617-6467x12895",
+          "count": 1
+        },
+        {
+          "value": "001-234-203-0635x76146",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Phone 2",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 100,
+      "top": [
+        {
+          "value": "397.884.0519x718",
+          "count": 1
+        },
+        {
+          "value": "686-620-1820x944",
+          "count": 1
+        },
+        {
+          "value": "(496)978-3969x58947",
+          "count": 1
+        },
+        {
+          "value": "+1-813-324-8756",
+          "count": 1
+        },
+        {
+          "value": "001-199-446-3860x3486",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Email",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 100,
+      "top": [
+        {
+          "value": "zunigavanessa@smith.info",
+          "count": 1
+        },
+        {
+          "value": "vmata@colon.com",
+          "count": 1
+        },
+        {
+          "value": "beckycarr@hogan.com",
+          "count": 1
+        },
+        {
+          "value": "stanleyblackwell@benson.org",
+          "count": 1
+        },
+        {
+          "value": "colinalvarado@miles.net",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Subscription Date",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 96,
+      "top": [
+        {
+          "value": "2021-04-23",
+          "count": 2
+        },
+        {
+          "value": "2021-12-02",
+          "count": 2
+        },
+        {
+          "value": "2022-01-13",
+          "count": 2
+        },
+        {
+          "value": "2022-05-15",
+          "count": 2
+        },
+        {
+          "value": "2020-08-24",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "Website",
+      "type": "text",
+      "missing": 0,
+      "missing_pct": 0.0,
+      "unique": 100,
+      "top": [
+        {
+          "value": "http://www.stephenson.com/",
+          "count": 1
+        },
+        {
+          "value": "http://www.hobbs.com/",
+          "count": 1
+        },
+        {
+          "value": "http://www.lawrence.com/",
+          "count": 1
+        },
+        {
+          "value": "http://www.good-lyons.com/",
+          "count": 1
+        },
+        {
+          "value": "https://goodwin-ingram.com/",
+          "count": 1
+        }
+      ]
     }
-  }
+  ]
 }
