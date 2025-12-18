@@ -40,20 +40,22 @@ with st.sidebar:
                         response = httpx.get(url, timeout=10.0)
                         response.raise_for_status()
                         
-                        # التعديل المهم هنا: نستخدم BytesIO و content
-                        # لكي يصبح الملف القادم من الرابط مطابقاً للملف المرفوع
-                        uploaded_file = io.BytesIO(response.content)
+                        # التعديل: حفظ الملف في session_state لضمان بقائه بعد إعادة التشغيل
+                        st.session_state['url_file'] = io.BytesIO(response.content)
                         st.success("Data fetched successfully!")
                         
                 except Exception as e:
                     st.error(f"Failed to load URL: {e}")
+        
+        # استرجاع الملف من الذاكرة إذا كان موجوداً
+        if 'url_file' in st.session_state:
+            uploaded_file = st.session_state['url_file']
 
 # --- المنطق الرئيسي ---
-# ملاحظة: uploaded_file الآن قد يأتي من الرفع أو من الرابط، الكود لا يفرق بينهما
 if uploaded_file is not None:
     try:
         # 1. حفظ الملف مؤقتاً وقراءته
-        # seek(0) مهمة لضمان قراءة الملف من بدايته
+        # seek(0) مهمة لضمان قراءة الملف من بدايته خاصة إذا تم استخدامه سابقاً
         uploaded_file.seek(0)
         
         with tempfile.NamedTemporaryFile(delete=False, suffix=".csv") as tmp:
